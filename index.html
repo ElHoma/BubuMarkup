@@ -28,19 +28,20 @@
               <img src="./images/logo.png" alt="" />
             </a>
           </div>
+          <form class="search-form">
+            <input
+              class="search-area"
+              type="text"
+              placeholder="Я шукаю..."
+              id=""
+            />
+            <button class="search-btn">
+              <img src="./images/svg/search.png" alt="" />
+            </button>
+          </form>
           <div class="mobile-nav">
-            <form class="search-form">
-              <input
-                class="search-area"
-                type="text"
-                placeholder="Я шукаю..."
-                id=""
-              />
-              <button><img src="./images/svg/search.png" alt="" /></button>
-            </form>
-
             <ul class="stats-list">
-              <li>
+              <li class="stats-item">
                 <button>
                   <img
                     src="./images/svg/сomparison.png"
@@ -48,8 +49,9 @@
                     height="20"
                   />
                 </button>
+                <p class="stats-number">0</p>
               </li>
-              <li>
+              <li class="stats-item">
                 <button>
                   <img
                     src="./images/svg/favorite.png"
@@ -57,11 +59,13 @@
                     height="20"
                   />
                 </button>
+                <p class="stats-number">0</p>
               </li>
-              <li>
+              <li class="stats-item">
                 <button>
                   <img src="./images/svg/cart.png" alt="Cart" height="20" />
                 </button>
+                <p class="stats-number">0</p>
               </li>
             </ul>
           </div>
@@ -69,84 +73,197 @@
 
         <!-- DESKTOP MENU -->
         <div class="desktop-menu">
-          <a href="index.html"> <img src="./images/logo.png" alt="" /> </a>
+          <div class="upper-header-row">
+            <a href="index.html">
+              <img src="./images/logo.png" alt="" class="desktop-logo" />
+            </a>
 
-          <nav class="nav">
-            <ul class="nav-list">
-              <li><a href="">Про нас</a></li>
-              <li><a href="">Контакти</a></li>
-              <li><a href="">Доставка і оплата</a></li>
-              <li><a href="">Повернення і обмін</a></li>
-            </ul>
-          </nav>
-          <address class="address">
-            <ul class="social-links-list">
-              <li><a href="tell:(063) 128-46-09">(063) 128-46-09</a></li>
-              <li>
-                <a href=""
-                  ><img src="./images/svg/instagram.png" alt="Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="./images/svg/youtube.png" alt="YouTube"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="./images/svg/facebook.png" alt="Facebook"
-                /></a>
-              </li>
-            </ul>
-          </address>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-list-item">
+                  <a href="" class="nav-link">Про нас</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="" class="nav-link">Контакти</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="" class="nav-link">Доставка і оплата</a>
+                </li>
+                <li class="nav-list-item">
+                  <a href="" class="nav-link">Повернення і обмін</a>
+                </li>
+              </ul>
+            </nav>
 
-          <div class="language-btn">
-            <button type="button">укр</button>
-            <button type="button">рус</button>
+            <address class="address">
+              <ul class="social-links-list">
+                <li>
+                  <a href="tell:(063) 128-46-09" class="phone-number"
+                    >(063) 128-46-09</a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./images/svg/instagram.png" alt="Instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./images/svg/youtube.png" alt="YouTube"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="./images/svg/facebook.png" alt="Facebook"
+                  /></a>
+                </li>
+              </ul>
+            </address>
+
+            <div class="language-btn-container">
+              <button type="button" class="language-btn lang-active-btn">
+                Укр
+              </button>
+              <button type="button" class="language-btn lang-notactive-btn">
+                Рус
+              </button>
+            </div>
+
+            <button type="button" class="auth-btn">Вхід</button>
           </div>
 
-          <div class="auth">
-            <button type="button">
-              <img src="./images/svg/user.png" alt="" />Вхід
-            </button>
-          </div>
+          <div class="lower-header-row">
+            <div class="catalog">
+              <button class="catalog-btn">КАТАЛОГ</button>
+            </div>
 
-          <div class="catalog">
-            <button>
-              <img src="./images/svg/Menu.png" alt="" /><span class="catalog"
-                >КАТАЛОГ</span
-              >
-            </button>
-          </div>
+            <form class="search-form">
+              <input
+                class="search-area"
+                type="text"
+                placeholder="Я шукаю..."
+                id=""
+              />
+              <button class="search-btn">
+                <img src="./images/svg/search.png" alt="" />
+              </button>
+            </form>
 
-          <form>
-            <input type="text" placeholder="Я шукаю..." id="" />
-            <button>search</button>
-          </form>
-
-          <div>
-            <ul>
-              <li>
-                <button>
-                  <img src="./images/svg/сomparison.png" alt="Comparison" />
-                </button>
-              </li>
-              <li>
-                <button>
-                  <img src="./images/svg/favorite.png" alt="Favorite" />
-                </button>
-              </li>
-              <li>
-                <button><img src="./images/svg/cart.png" alt="Cart" /></button>
-              </li>
-            </ul>
+            <div class="desktop-stats">
+              <ul class="stats-list">
+                <li class="stats-item">
+                  <button>
+                    <img
+                      src="./images/svg/сomparison.png"
+                      alt="Comparison"
+                      height="20"
+                    />
+                  </button>
+                  <p class="stats-number">0</p>
+                </li>
+                <li class="stats-item">
+                  <button>
+                    <img
+                      src="./images/svg/favorite.png"
+                      alt="Favorite"
+                      height="20"
+                    />
+                  </button>
+                  <p class="stats-number">0</p>
+                </li>
+                <li class="stats-item">
+                  <button>
+                    <img src="./images/svg/cart.png" alt="Cart" height="20" />
+                  </button>
+                  <p class="stats-number">0</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main>
+      <!-- HERO -->
       <section class="hero">
-        <a href=""><img src="./images/hero.png" alt="" /></a>
+        <div class="container hero-container">
+          <ul class="desktop-catalog-list">
+            <li class="catalog-list-item">
+              <a href=""
+                ><img src="./images/svg/burgerIcons/burger1.png" alt="" />Дитячі
+                коляски</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img src="./images/svg/burgerIcons/burger2.png" alt="" />Дитяча
+                кімната</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger3.png"
+                  alt=""
+                />Стільці і шезлонги
+              </a>
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img src="./images/svg/burgerIcons/burger4.png" alt="" />Для
+                годування</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger5.png"
+                  alt=""
+                />Гігієна і догляд</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger6.png"
+                  alt=""
+                />Автокрісла</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger7.png"
+                  alt=""
+                />Дитячий транспорт</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger8.png"
+                  alt=""
+                />Іграшки</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img
+                  src="./images/svg/burgerIcons/burger9.png"
+                  alt=""
+                />Одяг</a
+              >
+            </li>
+            <li class="catalog-list-item">
+              <a href=""
+                ><img src="./images/svg/burgerIcons/burger10.png" alt="" />Новий
+                товар</a
+              >
+            </li>
+          </ul>
+
+          <a href=""><img src="./images/hero.png" alt="" /></a>
+        </div>
       </section>
     </main>
   </body>
